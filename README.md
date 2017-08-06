@@ -21,7 +21,18 @@ Devise  (For User Authentication)
 More to be added
 
 ****Features****
-Features will be added here when they are added.
+
+****Goals****
+
+[] Goals will have a financial endpoint
+
+[] Goals will have a controller
+
+[] Goals will be able to be viewed
+
+[] Goals can be edited
+
+More Features will be added here when they are added.
 
 As always, thank you for reading.  Any issues with Thriftie can be submitted via github as either "issues" or a "pull request".  
 
