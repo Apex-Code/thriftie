@@ -1,1 +1,12 @@
-<h1>This is the index page placeholder!</h1>
+
+<% if !@goals.any? %>
+<h1>It looks like you haven't added any goals, let's change that first.</h1><br>
+<%= link_to "Add Goal", new_goal_path %>
+
+  <% else %>
+   <% @goals.each do |goal| %>
+
+   <%= link_to goal.title, goal_path(goal) %>
+
+  <% end %>
+<% end %>
