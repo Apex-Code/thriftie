@@ -6,5 +6,5 @@
 
 <h2>Target Completion Date: <%= @goal.target_date %> </h2>
 
-<%= link_to "Edit", edit_goal_path(@goal) %> | <%= link_to "Delete", goal_path(@goal), method: :delete, data: { confirm: "You can't come back from this.  Are you sure?" }, class: "btn btn-custom" %
+<%= link_to "Edit", edit_goal_path(@goal) %> | <%= link_to "Delete", goal_path(@goal), method: :delete, data: { confirm: "You can't come back from this.  Are you sure?" }, class: "btn btn-custom" %>
 <%= link_to "Back", root_path %>
