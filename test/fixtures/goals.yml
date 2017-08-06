@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  target: 1
+  balance: 1
+  target_date: 2017-08-06 14:48:07
+
+two:
+  title: MyString
+  target: 1
+  balance: 1
+  target_date: 2017-08-06 14:48:07
