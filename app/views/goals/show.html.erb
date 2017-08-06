@@ -1,1 +1,10 @@
-<h1>This is the goal show page</h1>
+<h1><%= @goal.title %></h1><br>
+
+<h2>Current Balance: <%= @goal.balance %> </h2> <br>
+
+<h2>Target Balance: <%= @goal.target %></h2><br>
+
+<h2>Target Completion Date: <%= @goal.target_date %> </h2>
+
+<%= link_to "Edit", edit_goal_path(@goal) %> | <%= link_to "Delete", goal_path(@goal), method: :delete, data: { confirm: "You can't come back from this.  Are you sure?" }, class: "btn btn-custom" %
+<%= link_to "Back", root_path %>
