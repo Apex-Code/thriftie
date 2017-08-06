@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root "goals#index"
-  resource :goals
+  resources :goals
 end
