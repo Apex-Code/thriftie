@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Thriftie ##
 
-Things you may want to cover:
+Thriftie is a Ruby on Rails application, the goal of which is to enable users the
+ability to set and track financial goals.  By its completion Thriftie should be able to
+account for deposits and withdrawals, and report various details about a user's financial
+plan (percentage complete, time to completion, average deposits, average withdrawals, and the like).
 
-* Ruby version
+##This README##
 
-* System dependencies
+This README is a living, breathing, digital document.  Because this app is in development, this document can
+and will, change frequently as new functionality is added or removed.  
 
-* Configuration
+*****Gems******
 
-* Database creation
+Bootstrap-Sass (For styling)
 
-* Database initialization
+Devise  (For User Authentication)
 
-* How to run the test suite
+More to be added
 
-* Services (job queues, cache servers, search engines, etc.)
+****Features****
+Features will be added here when they are added.
 
-* Deployment instructions
+As always, thank you for reading.  Any issues with Thriftie can be submitted via github as either "issues" or a "pull request".  
 
-* ...
+All forms of criticism welcomed and appreciated.
+
+~~Apex-Code
