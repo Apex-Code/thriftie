@@ -1,5 +1,7 @@
 class GoalsController < ApplicationController
 
+  before_action :find_goal, only: [:show, :edit, :update, :destroy]
+
   def index
     @goals = Goal.all.order("created_at DESC")
   end
