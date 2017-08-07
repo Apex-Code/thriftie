@@ -1,6 +1,7 @@
 class GoalsController < ApplicationController
 
   before_action :find_goal, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   def index
     @goals = Goal.all.order("created_at DESC")
