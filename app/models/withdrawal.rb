@@ -1,3 +1,3 @@
 class Withdrawal < ApplicationRecord
-  belongs_to :transaction, inverse_of: :withdrawals
+  belongs_to :tranzaction, inverse_of: :withdrawals
 end

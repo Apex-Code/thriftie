@@ -1,16 +1,16 @@
-class TransactionsController < ApplicationController
+class TranzactionsController < ApplicationController
 
-  before_action :find_transaction, only: [:show, :edit, :update, :destroy]
+  before_action :find_tranzaction, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
   def new
-    @transaction = current_user.goals.transactions.build
+    @tranzaction = current_user.goals.tranzactions.build
   end
 
   def create
-    @transaction = current_user.goals.transactions.build
-    if @transaction.save
-      redirect_to @transaction
+    @tranzaction = current_user.goals.tranzactions.build
+    if @tranzaction.save
+      redirect_to @tranzaction
     else
       render 'new'
     end
@@ -23,26 +23,26 @@ class TransactionsController < ApplicationController
   end
 
   def update
-    if @transaction.update(transaction_params)
-      redirect_to @transaction
+    if @tranzaction.update(tranzaction_params)
+      redirect_to @tranzaction
     else
       render 'edit'
     end
   end
 
   def destroy
-    @transaction.destroy
+    @tranzaction.destroy
       redirect_to root_path
   end
 
 
 private
 
-  def transaction_params
-    params.require(:transaction).permit(:withrawal, :deposit)
+  def tranzaction_params
+    params.require(:tranzaction).permit(:withrawal, :deposit)
   end
 
-  def find_transaction
-    @transaction = Transaction.find(params[:id])
+  def find_tranzaction
+    @tranzaction = Tranzaction.find(params[:id])
   end
 end

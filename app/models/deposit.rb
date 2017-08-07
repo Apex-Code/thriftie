@@ -1,3 +1,3 @@
 class Deposit < ApplicationRecord
-  belongs_to :transaction, inverse_of: :deposits
+  belongs_to :tranzaction, inverse_of: :deposits
 end

@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 20170807042816) do
     t.decimal "amount", precision: 15, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "transaction_id"
-    t.index ["transaction_id"], name: "index_deposits_on_transaction_id"
+    t.integer "tranzaction_id"
+    t.index ["tranzaction_id"], name: "index_deposits_on_tranzaction_id"
   end
 
   create_table "goals", force: :cascade do |t|
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20170807042816) do
     t.index ["user_id"], name: "index_goals_on_user_id"
   end
 
-  create_table "transactions", force: :cascade do |t|
+  create_table "tranzactions", force: :cascade do |t|
     t.integer "goal_id"
     t.integer "user_id"
     t.datetime "created_at", null: false
@@ -60,8 +60,8 @@ ActiveRecord::Schema.define(version: 20170807042816) do
     t.decimal "amount", precision: 15, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "transaction_id"
-    t.index ["transaction_id"], name: "index_withdrawals_on_transaction_id"
+    t.integer "tranzaction_id"
+    t.index ["tranzaction_id"], name: "index_withdrawals_on_tranzaction_id"
   end
 
 end
