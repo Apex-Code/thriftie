@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170807041728) do
+ActiveRecord::Schema.define(version: 20170807042816) do
 
   create_table "deposits", force: :cascade do |t|
     t.decimal "amount", precision: 15, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "transaction_id"
+    t.index ["transaction_id"], name: "index_deposits_on_transaction_id"
   end
 
   create_table "goals", force: :cascade do |t|
@@ -58,6 +60,8 @@ ActiveRecord::Schema.define(version: 20170807041728) do
     t.decimal "amount", precision: 15, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "transaction_id"
+    t.index ["transaction_id"], name: "index_withdrawals_on_transaction_id"
   end
 
 end
