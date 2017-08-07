@@ -48,5 +48,4 @@ private
   def find_goal
     @goal = Goal.find(params[:id])
   end
-
 end
