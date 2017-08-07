@@ -24,13 +24,13 @@ More to be added
 
 ****Goals****
 
-[] Goals will have a financial endpoint
+[X] Goals will have a financial endpoint
 
-[] Goals will have a controller
+[X] Goals will have a controller
 
-[] Goals will be able to be viewed
+[X] Goals will be able to be viewed
 
-[] Goals can be edited
+[X] Goals can be edited
 
 More Features will be added here when they are added.
 
