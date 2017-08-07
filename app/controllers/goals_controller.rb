@@ -4,18 +4,18 @@ class GoalsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @goals = Goal.all.order("created_at DESC")
+    @goals = Goal.where(user_id: current_user)
   end
 
   def show
   end
 
   def new
-    @goal = Goal.new
+    @goal = current_user.goals.build
   end
 
   def create
-    @goal = Goal.new(goal_params)
+    @goal = current_user.goals.build(goal_params)
     if @goal.save
       redirect_to @goal
     else
