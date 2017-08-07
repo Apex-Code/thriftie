@@ -7,7 +7,7 @@ ability to set and track financial goals.  By its completion Thriftie should be 
 account for deposits and withdrawals, and report various details about a user's financial
 plan (percentage complete, time to completion, average deposits, average withdrawals, and the like).
 
-##This README##
+**This README**
 
 This README is a living, breathing, digital document.  Because this app is in development, this document can
 and will, change frequently as new functionality is added or removed.  
