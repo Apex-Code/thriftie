@@ -1,0 +1,27 @@
+<%= simple_form_for @transaction.withdrawal do |f| %>
+
+  <div class="field">
+    <%= f.label :withdrawal_amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+
+  <div class="actions">
+    <%= f.label :submit_withdrawal %>
+    <%= f.submit %>
+  </div>
+
+<% end %>
+
+<%= simple_form_for @transaction.deposit do |f| %>
+
+  <div class="field">
+    <%= f.label :deposit_amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+
+  <div class="actions">
+    <%= f.label :submit_deposit %>
+    <%= f.submit %>
+  </div>
+
+<% end %>
