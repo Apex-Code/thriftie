@@ -4,11 +4,25 @@ class TransactionsController < ApplicationController
   before_action :authenticate_user!
 
   def new
-    @transaction = Transaction.new
+    @transaction = current_user.goals.transactions.build
   end
 
   def create
-    @transaction = Transaction.new(transaction_params)
+    @transaction = current_user.goals.transactions.build
+  end
+
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
+    @transaction.destroy
+      redirect_to root_path
   end
 
 
