@@ -2,7 +2,7 @@
 
 <h2>Current Balance: <%= @goal.balance %> </h2> <br>
 
-<h2>Target Balance: <%= @goal.target %></h2><br>
+<h2>Target Balance: <%= @goal.target.number_to_currency %></h2><br>
 
 <h2>Target Completion Date: <%= @goal.target_date %> </h2>
 
