@@ -9,6 +9,11 @@ class TransactionsController < ApplicationController
 
   def create
     @transaction = current_user.goals.transactions.build
+    if @transaction.save
+      redirect_to @transaction
+    else
+      render 'new'
+    end
   end
 
   def show
@@ -18,6 +23,11 @@ class TransactionsController < ApplicationController
   end
 
   def update
+    if @transaction.update(transaction_params)
+      redirect_to @transaction
+    else
+      render 'edit'
+    end
   end
 
   def destroy
